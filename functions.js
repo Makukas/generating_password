@@ -8,6 +8,11 @@ function generatePassword(){
   var capitalLetters1 = document.getElementById("capitalLetters").checked;
   var specialChar1 = document.getElementById("specialChar").checked;
 
+  if(numbers1 && smallLetters1 && capitalLetters1 && specialChar1 == false){
+    window.alert("You didn't select any options!")
+    return;
+  }
+
   if(lenght == 0){
     window.alert("Your password can't be nothing!");
     return;
@@ -30,10 +35,6 @@ function generatePassword(){
 
   for(i=1; i<=lenght; i){
     randomNumber = Math.floor(Math.random() * 4);
-
-    if(numbers1 && smallLetters1 && capitalLetters1 && specialChar1 == false){
-      break;
-    }
 
       if(randomNumber == 0 && numbers1 == true){
         randomNumber1 = Math.floor(Math.random() * 10);
@@ -63,7 +64,7 @@ function generatePassword(){
         i = lenght;
       }
   }
-  
+
 document.getElementById("PasswordValueForm").style.display = 'block';
 document.getElementById("Password").value = password;
 
