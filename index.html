@@ -17,12 +17,19 @@
     </head>
 <body>
 
+
+<ul>
+ <li><button href="index.html">EZ Pass</button></li>
+ <li><button href="#">Login</button></li>
+</ul>
+
+
 <div class="form">
   <h3>Welcome!</h3>
   <h4>What kind of a password would you like?</h4>
   <div class="passwordForm">
     <br><br>
-    <form action="#" onsubmit="generatePassword();return false;">
+    <form >
       <div class="form-group">
         <label for="passwordLenght">Lenght of the password</label>
         <input type="text" class="form-control" id="PasswordLenght" name="PasswordLenght" placeholder="Number of characters">
@@ -47,7 +54,7 @@
             </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Generate!</button>
+          <button type="button" class="btn btn-primary" onclick="generatePassword()">Generate!</button>
       </div>
       <br>
     </form>
