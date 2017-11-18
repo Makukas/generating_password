@@ -4,6 +4,7 @@ body{
 }
 
 ul {
+    display:block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,6 +34,18 @@ li button {
     text-decoration: none;
     background-color: #333;
     border: 1px #333;
+}
+
+p#logo{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  border: 1px #333;
+  padding-top: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 li button:hover:not(.active) {
