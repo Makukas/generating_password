@@ -8,7 +8,7 @@ function generatePassword(){
   var capitalLetters1 = document.getElementById("capitalLetters").checked;
   var specialChar1 = document.getElementById("specialChar").checked;
 
-  if((numbers1 && smallLetters1 && capitalLetters1 && specialChar1) == false){
+  if(numbers1 == false && smallLetters1 == false && capitalLetters1 == false && specialChar1 == false){
     window.alert("You didn't select any options!")
     return;
   }
